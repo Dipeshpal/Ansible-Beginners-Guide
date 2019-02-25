@@ -5,7 +5,7 @@
 ### 1. Setup Virtual Machines and Establishing connections between them
 1. First Create atleast two virtual machine (Linux Recommended) in your computer
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
-3. Install ansble on VM 1 (Virtual Machine 1). (Installation Guide)[https://www.edureka.co/blog/install-ansible/]
+3. Install ansble on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
   ```
     yum install ansible -y
   ```
@@ -48,4 +48,9 @@
    Command- "ansible app_group -i /root/custom_hosts -m ping
    ```
 ### 2. Create Playbook
-1. 
+We will write ansible playbook and create ansible roles.
+1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
+We will create apache roles under default directory. Command-
+  ```
+  ansible-galaxy init /etc/ansible/roles/apache
+  ```
