@@ -40,9 +40,9 @@
   ```
     `If connection established you will get success ping`
 6. NOTE: (Optional)
-   `
+   ```
     If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory
    
-   `
+   ```
 ### 2. Create Playbook
 1. 
