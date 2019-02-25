@@ -1,6 +1,8 @@
 # Ansible Beginners Guide
 
 ### Get Started
+
+## 1. Setup Virtual Machines and Establishing connections between them
 1. First Create atleast two virtual machine (Linux Recommended) in your computer
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
 3. Install ansble on VM 1 (Virtual Machine 1). (Installation Guide)[https://www.edureka.co/blog/install-ansible/]
@@ -36,5 +38,7 @@
   ```
     ansible app_group -m ping
   ```
-  `If connection established you will get success ping`
-6. 
+    `If connection established you will get success ping`
+
+## 2. Create Playbook
+1. 
