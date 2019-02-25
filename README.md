@@ -150,3 +150,19 @@ We will create apache roles under default directory. Command-
    ```
    ansible-playbook runsetup.yml
    ```
+5. Done, now you can check whether everything is working or not?
+   * Go to VM 2 (Suppose ip of VM 2 is 192.168.0.3)
+   * Open terminal and run following commands
+   Check httpd installed or not
+   ```
+   rpmquery httpd
+   ```
+   verify service is started or not?
+   ```
+   systemctl status httpd
+   ```
+   Access index.html (Webpage)
+   ```
+   elinks http://192.168.0.3
+   ```
+5. That's it for Ansible Getting Started
