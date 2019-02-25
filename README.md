@@ -41,8 +41,11 @@
     `If connection established you will get success ping`
 6. NOTE: (Optional)
    ```
-    If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory
-   
+    If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.
+   ```
+   ```
+   You can also specify your hosts file location in command instead of "ansible.cfg" file.
+   Command- "ansible app_group -i /root/custom_hosts -m ping
    ```
 ### 2. Create Playbook
 1. 
