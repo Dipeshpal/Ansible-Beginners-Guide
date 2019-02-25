@@ -11,14 +11,13 @@
   ```
 4. Once done, now go to following directory in VM 1
 ```
-[root@localhost ansible]# pwd
-/etc/ansible
-[root@localhost ansible]# tree
-.
+[root@localhost etc]# tree ansible
+ansible
 |-- ansible.cfg
 |-- hosts
 |-- main.yml
 `-- roles
+
 ```
 5. Now first of all edit "hosts" file with any editor
    * Note the ip of virtual machine 2 and add it on the bottom of hosts file
