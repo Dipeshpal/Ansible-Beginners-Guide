@@ -114,8 +114,7 @@ We will create apache roles under default directory. Command-
       - apache
    ``
    And your ansible directrory should look like this-
-   ```
-      [root@localhost etc]# tree ansible
+   ```[root@localhost etc]# tree ansible
       ansible
       |-- ansible.cfg
       |-- hosts
