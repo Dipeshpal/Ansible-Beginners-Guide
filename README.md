@@ -38,7 +38,7 @@ ansible
     ansible app_group -m ping
   ```
     `If connection established you will get success ping`
-6. NOTE: (Optional)
+7. NOTE: (Optional)
    ```
     If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.
    ```
@@ -74,3 +74,36 @@ apache
 `-- vars
     `-- main.yml
 ```
+2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
+   * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
+   * create main.yml in "handler" directory
+   * Create httpd.original, index.html in files directory
+   * Create main.yml in "meta" directory
+   `Once you create all these files, your project should look like these.
+    ```
+    [root@localhost roles]# tree apache
+    apache
+    |-- defaults
+    |   `-- main.yml
+    |-- files
+    |   |-- httpd.original
+    |   `-- index.html
+    |-- handlers
+    |   `-- main.yml
+    |-- meta
+    |   `-- main.yml
+    |-- README.md
+    |-- tasks
+    |   |-- configure.yml
+    |   |-- install.yml
+    |   |-- main.yml
+    |   `-- service.yml
+    |-- templates
+    |-- tests
+    |   |-- inventory
+    |   `-- test.yml
+    `-- vars
+        `-- main.yml
+
+    ```
+
