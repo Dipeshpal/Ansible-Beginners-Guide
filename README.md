@@ -53,27 +53,27 @@ We will create apache roles under default directory. Command-
   ```
   ansible-galaxy init /etc/ansible/roles/apache -offline
   ```
-This will create apache roles under roles dirctory. The tree structure is-
-```
-[root@localhost roles]# tree apache
-apache
-|-- defaults
-|   `-- main.yml
-|-- files
-|-- handlers
-|   `-- main.yml
-|-- meta
-|   `-- main.yml
-|-- README.md
-|-- tasks
-|   `-- main.yml
-|-- templates
-|-- tests
-|   |-- inventory
-|   `-- test.yml
-`-- vars
-    `-- main.yml
-```
+  This will create apache roles under roles dirctory. The tree structure is-
+  ```
+  [root@localhost roles]# tree apache
+  apache
+  |-- defaults
+  |   `-- main.yml
+  |-- files
+  |-- handlers
+  |   `-- main.yml
+  |-- meta
+  |   `-- main.yml
+  |-- README.md
+  |-- tasks
+  |   `-- main.yml
+  |-- templates
+  |-- tests
+  |   |-- inventory
+  |   `-- test.yml
+  `-- vars
+      `-- main.yml
+  ```
 2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
    * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
    * create main.yml in "handler" directory
@@ -106,4 +106,44 @@ apache
         `-- main.yml
 
     ```
+3. Now use this playbook (created in step 2) by creating "runsetup.yml" in ansible dirctory
+   ```
+   ---
+    - hosts: app_group
+      roles:
+      - apache
+   ``
+   And your ansible directrory should look like this-
+   ```
+      [root@localhost etc]# tree ansible
+      ansible
+      |-- ansible.cfg
+      |-- hosts
+      |-- main.yml
+      |-- roles
+      |   `-- apache
+      |       |-- defaults
+      |       |   `-- main.yml
+      |       |-- files
+      |       |   |-- httpd.original
+      |       |   `-- index.html
+      |       |-- handlers
+      |       |   `-- main.yml
+      |       |-- meta
+      |       |   `-- main.yml
+      |       |-- README.md
+      |       |-- tasks
+      |       |   |-- configure.yml
+      |       |   |-- install.yml
+      |       |   |-- main.yml
+      |       |   `-- service.yml
+      |       |-- templates
+      |       |-- tests
+      |       |   |-- inventory
+      |       |   `-- test.yml
+      |       `-- vars
+      |           `-- main.yml
+      `-- runsetup.yml
 
+      10 directories, 17 files
+   ```
