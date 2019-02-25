@@ -1,0 +1,10 @@
+---
+- hosts: app_group 
+  sudo: yes
+  tasks:
+    - name: install apache
+      action: yum name=httpd state=installed
+    - name: start apache
+      service:
+       name: httpd
+       state: restarted
