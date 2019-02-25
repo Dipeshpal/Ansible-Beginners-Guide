@@ -50,30 +50,30 @@ ansible
 We will write ansible playbook and create ansible roles.
 1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
 We will create apache roles under default directory. Command-
-  ```
-  ansible-galaxy init /etc/ansible/roles/apache -offline
-  ```
-  This will create apache roles under roles dirctory. The tree structure is-
-  ```
-  [root@localhost roles]# tree apache
-  apache
-  |-- defaults
-  |   `-- main.yml
-  |-- files
-  |-- handlers
-  |   `-- main.yml
-  |-- meta
-  |   `-- main.yml
-  |-- README.md
-  |-- tasks
-  |   `-- main.yml
-  |-- templates
-  |-- tests
-  |   |-- inventory
-  |   `-- test.yml
-  `-- vars
-      `-- main.yml
-  ```
+    ```
+    ansible-galaxy init /etc/ansible/roles/apache -offline
+    ```
+    This will create apache roles under roles dirctory. The tree structure is-
+    ```
+    [root@localhost roles]# tree apache
+    apache
+    |-- defaults
+    |   `-- main.yml
+    |-- files
+    |-- handlers
+    |   `-- main.yml
+    |-- meta
+    |   `-- main.yml
+    |-- README.md
+    |-- tasks
+    |   `-- main.yml
+    |-- templates
+    |-- tests
+    |   |-- inventory
+    |   `-- test.yml
+    `-- vars
+        `-- main.yml
+    ```
 2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
    * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
    * create main.yml in "handler" directory
@@ -145,4 +145,8 @@ We will create apache roles under default directory. Command-
       `-- runsetup.yml
 
       10 directories, 17 files
+   ```
+4. Now deploy runsetup, run following command-
+   ```
+   ansible-playbook runsetup.yml
    ```
