@@ -1,6 +1,6 @@
 # Ansible Beginners Guide
 
-## In this project we will setup virtual machine Server and Client, Create Ansible roles, write ansible playbook and deploy it on client machine.
+## In this project we will setup virtual machine (Server and Client), Create Ansible roles, write ansible playbook and deploy it on client machine.
 
 [Read more about ansible](https://docs.ansible.com/)
 
@@ -14,7 +14,7 @@
   
       You can directly use VM1 as server to control client (VM2) or You can establish connection with your VMs to your main machine by using putty.
   
-3. Install ansble on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
+3. Install ansible on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
     ```
       yum install ansible -y
     ```
@@ -35,13 +35,14 @@
    
    i) Add ip address directly
    ```
-    192.168.0.2
+    192.168.248.129
    ```
    ii) Add group of ip address (You can also create multiple groups). You can add any name you want.
    ```
     [app_group]
-    192.168.0.2
-    192.168.0.3
+    192.168.248.129
+    192.168.248.130
+    192.168.248.131
    ```
     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/3.PNG" align="center"></a>
 
@@ -55,7 +56,7 @@
 
    'If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.'
    
-   'ansible.cfg-'
+   `ansible.cfg-`
    
     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/4.PNG" align="center"></a>
 
