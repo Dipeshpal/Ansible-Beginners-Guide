@@ -7,8 +7,9 @@
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
   
   ![Image](https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG)
-  <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG" align="left" height="48" width="48" ></a>
-
+ ```
+ <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG" align="left" height="408" width="408" ></a>
+```
   
   You can directly use VM1 as server to control client (VM2) or You can establish connection with your VMs to your main machine by using putty.
 3. Install ansble on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
