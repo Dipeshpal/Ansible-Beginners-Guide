@@ -1,8 +1,12 @@
 # Ansible Beginners Guide
 
-## Get Started
+## In this project we will setup virtual machine Server and Client, Create Ansible roles, write ansible playbook and deploy it on client machine.
 
-### 1. Setup Virtual Machines and Establishing connections
+[Read more about ansible](https://docs.ansible.com/)
+
+## Getting Started-
+
+### 1. Setup Virtual Machines (Server and Client) and Establishing connections-
 1. First Create atleast two virtual machine (Linux Recommended) in your computer
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
   
@@ -59,7 +63,7 @@
    You can also specify your hosts file location in command instead of "ansible.cfg" file.
    Command- "ansible app_group -i /root/custom_hosts -m ping
    ```
-### 2. Create Playbook
+### 2. Create Ansible Roles-
   We will write ansible playbook and create ansible roles.
 1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
 We will create apache roles under default directory. Command-
@@ -87,7 +91,9 @@ We will create apache roles under default directory. Command-
     `-- vars
         `-- main.yml
     ```
+### 3. Create Playbook-
 2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
+     You can clone this project and use these files or codes-
    * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
    * create main.yml in "handler" directory
    * Create httpd.original, index.html in files directory
@@ -159,13 +165,16 @@ We will create apache roles under default directory. Command-
 
       10 directories, 17 files
    ```
-4. Now deploy runsetup, run following command-
+   
+### 4. Deploy on Client Machine-
+
+1. Now deploy runsetup, run following command-
    ```
    ansible-playbook runsetup.yml
    ```
    <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/5.PNG" align="center"></a>
 
-5. Done, now you can check whether everything is working or not?
+2. Done, now you can check whether everything is working or not?
    * Go to VM 2 (Suppose ip of VM 2 is 192.168.0.3)
    * Open terminal and run following commands.
    
@@ -186,4 +195,4 @@ We will create apache roles under default directory. Command-
    <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/7.PNG" align="center"></a>
 
 
-5. That's it for Ansible Getting Started
+3. That's it for Ansible Getting Started
