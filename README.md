@@ -163,6 +163,8 @@ We will create apache roles under default directory. Command-
    ```
    ansible-playbook runsetup.yml
    ```
+   <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/5.PNG" align="center"></a>
+
 5. Done, now you can check whether everything is working or not?
    * Go to VM 2 (Suppose ip of VM 2 is 192.168.0.3)
    * Open terminal and run following commands
