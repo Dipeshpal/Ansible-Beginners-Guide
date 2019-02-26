@@ -176,8 +176,13 @@ We will create apache roles under default directory. Command-
    ```
    systemctl status httpd
    ```
+   <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/6.PNG" align="center"></a>
+
    Access index.html (Webpage)
    ```
    elinks http://192.168.0.3
    ```
+   <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/7.PNG" align="center"></a>
+
+
 5. That's it for Ansible Getting Started
