@@ -6,7 +6,7 @@
 1. First Create atleast two virtual machine (Linux Recommended) in your computer
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
   
-   <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG" align="center" height="408" width="608" ></a>
+     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG" align="center" height="408" width="608" ></a>
   
   You can directly use VM1 as server to control client (VM2) or You can establish connection with your VMs to your main machine by using putty.
   
@@ -15,15 +15,15 @@
     yum install ansible -y
   ```
 4. Once done, now go to following directory in VM 1
-  ```
-  [root@localhost etc]# tree ansible
-  ansible
-  |-- ansible.cfg
-  |-- hosts
-  |-- main.yml
-  `-- roles
-  ```
-  <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/2.PNG" align="center"></a>
+    ```
+    [root@localhost etc]# tree ansible
+    ansible
+    |-- ansible.cfg
+    |-- hosts
+    |-- main.yml
+    `-- roles
+    ```
+     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/2.PNG" align="center"></a>
 
 5. Now first of all edit "hosts" file with any editor
    * Note the ip of virtual machine 2 and add it on the bottom of hosts file
