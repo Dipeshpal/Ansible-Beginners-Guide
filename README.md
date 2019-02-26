@@ -5,6 +5,11 @@
 ### 1. Setup Virtual Machines and Establishing connections
 1. First Create atleast two virtual machine (Linux Recommended) in your computer
 2. Connect both virtual machine with main machine (your computer) by using SSH [Putty](https://www.putty.org/)
+   ```
+   ![Image](https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG)
+
+   ```
+   You can directly use VM1 as server to control client (VM2) or You can establish connection with your VMs to your main machine by using putty.
 3. Install ansble on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
   ```
     yum install ansible -y
