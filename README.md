@@ -9,6 +9,7 @@
    <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/1.PNG" align="center" height="408" width="608" ></a>
   
   You can directly use VM1 as server to control client (VM2) or You can establish connection with your VMs to your main machine by using putty.
+  
 3. Install ansble on VM 1 (Virtual Machine 1). [Installation Guide](https://www.edureka.co/blog/install-ansible/)
   ```
     yum install ansible -y
