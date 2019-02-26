@@ -66,7 +66,7 @@
    ```
 ### 2. Create Ansible Roles-
   
-  First of all we will create ansible role.
+   First of all we will create ansible role.
   
   1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
   We will create apache roles under default directory. Command-
@@ -78,25 +78,26 @@
   This will create apache roles under roles dirctory. The tree structure is-
   
   ```
-    [root@localhost roles]# tree apache
-    apache
-    |-- defaults
-    |   `-- main.yml
-    |-- files
-    |-- handlers
-    |   `-- main.yml
-    |-- meta
-    |   `-- main.yml
-    |-- README.md
-    |-- tasks
-    |   `-- main.yml
-    |-- templates
-    |-- tests
-    |   |-- inventory
-    |   `-- test.yml
-    `-- vars
-        `-- main.yml
-    ```
+      [root@localhost roles]# tree apache
+      apache
+      |-- defaults
+      |   `-- main.yml
+      |-- files
+      |-- handlers
+      |   `-- main.yml
+      |-- meta
+      |   `-- main.yml
+      |-- README.md
+      |-- tasks
+      |   `-- main.yml
+      |-- templates
+      |-- tests
+      |   |-- inventory
+      |   `-- test.yml
+      `-- vars
+          `-- main.yml
+  ```
+    
 ### 3. Create Playbook-
 2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
      You can clone this project and use these files or codes-
