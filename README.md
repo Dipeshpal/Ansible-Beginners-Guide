@@ -15,15 +15,16 @@
     yum install ansible -y
   ```
 4. Once done, now go to following directory in VM 1
-```
-[root@localhost etc]# tree ansible
-ansible
-|-- ansible.cfg
-|-- hosts
-|-- main.yml
-`-- roles
+  ```
+  [root@localhost etc]# tree ansible
+  ansible
+  |-- ansible.cfg
+  |-- hosts
+  |-- main.yml
+  `-- roles
+  ```
+  <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/2.PNG" align="center" height="408" width="608" ></a>
 
-```
 5. Now first of all edit "hosts" file with any editor
    * Note the ip of virtual machine 2 and add it on the bottom of hosts file
    * You can direcly paste ip or you can add multiples ip address by grouping them. Example-
