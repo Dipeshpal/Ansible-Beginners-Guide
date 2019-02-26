@@ -100,6 +100,7 @@
     
 ### 3. Create Playbook-
 1. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
+
      You can clone this project and use these files or codes-
    * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
    * create main.yml in "handler" directory
@@ -203,3 +204,5 @@
 
 
 3. That's it for Ansible Getting Started
+   :smiley: :thumbsup:
+   
