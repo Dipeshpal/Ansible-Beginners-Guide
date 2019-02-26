@@ -75,7 +75,7 @@
     ansible-galaxy init /etc/ansible/roles/apache -offline
   ```
   
-   This will create apache roles under roles dirctory. The tree structure is-
+   This will create apache roles under roles directory. The tree structure is-
   
   ```
       [root@localhost roles]# tree apache
@@ -99,7 +99,7 @@
   ```
     
 ### 3. Create Playbook-
-2. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
+1. Now create following files under tasks, files, handlers and meta directory. These files can be found in above project. You need to edit and create only fillowing files-
      You can clone this project and use these files or codes-
    * Create main.yml, configure.yml, install.yml, service.yml in "tasks" directory
    * create main.yml in "handler" directory
@@ -132,7 +132,7 @@
         `-- main.yml
 
     ```
-3. Now use this playbook (created in step 2) by creating "runsetup.yml" in ansible dirctory
+2. Now use this playbook (created in step 2) by creating "runsetup.yml" in ansible dirctory
    ```
    ---
     - hosts: app_group
