@@ -48,10 +48,9 @@
     If connection established you will get success ping
     
 7. NOTE: (Optional)
-   ```
-    If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.
-   ```
-   ansible.cfg
+   'If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.'
+   
+   'ansible.cfg-'
     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/4.PNG" align="center"></a>
 
    ```
