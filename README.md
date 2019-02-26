@@ -60,7 +60,7 @@
    Command- "ansible app_group -i /root/custom_hosts -m ping
    ```
 ### 2. Create Playbook
-We will write ansible playbook and create ansible roles.
+  We will write ansible playbook and create ansible roles.
 1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
 We will create apache roles under default directory. Command-
     ```
@@ -167,7 +167,8 @@ We will create apache roles under default directory. Command-
 
 5. Done, now you can check whether everything is working or not?
    * Go to VM 2 (Suppose ip of VM 2 is 192.168.0.3)
-   * Open terminal and run following commands
+   * Open terminal and run following commands.
+   
    Check httpd installed or not
    ```
    rpmquery httpd
