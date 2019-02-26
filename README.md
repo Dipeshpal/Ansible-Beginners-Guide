@@ -42,14 +42,18 @@
     <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/3.PNG" align="center"></a>
 
 5. Now test whether connection is established or not from virtual machine 1.
-  ```
-    ansible app_group -m ping
-  ```
-    `If connection established you will get success ping`
+    ```
+      ansible app_group -m ping
+    ```
+    If connection established you will get success ping
+    
 7. NOTE: (Optional)
    ```
     If you want to create your own "hosts" file in some other directory then you need to uncomment "Inventory" in "ansible.cfg" file and add your hosts file directory.
    ```
+   ansible.cfg
+    <a href="url"><img src="https://github.com/Dipeshpal/Ansible-Beginners-Guide/blob/master/Raw%20Images/4.PNG" align="center"></a>
+
    ```
    You can also specify your hosts file location in command instead of "ansible.cfg" file.
    Command- "ansible app_group -i /root/custom_hosts -m ping
