@@ -65,7 +65,7 @@
    Command- "ansible app_group -i /root/custom_hosts -m ping
    ```
 ### 2. Create Ansible Roles-
-       We create ansible roles.
+  First of all we will create ansible role.
   1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
   We will create apache roles under default directory. Command-
     ```
