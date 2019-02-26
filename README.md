@@ -68,14 +68,14 @@
   
    First of all we will create ansible role.
   
-  1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
+   1. Create ansible roles with ansible-galaxy (ansible-galaxy) will automatically create whole structure for us.
   We will create apache roles under default directory. Command-
   
   ```
     ansible-galaxy init /etc/ansible/roles/apache -offline
   ```
   
-  This will create apache roles under roles dirctory. The tree structure is-
+   This will create apache roles under roles dirctory. The tree structure is-
   
   ```
       [root@localhost roles]# tree apache
